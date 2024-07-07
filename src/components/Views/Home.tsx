@@ -8,20 +8,21 @@ import { HomeStyled } from '../../theme/Theme';
 
 import userAvatar from '../../theme/assets/ipablo.dev.webp';
 
-export interface AppProps {
+export interface HomeProps {
   rightContent?: ReactNode;
 }
 
-export const Home: React.FC<AppProps> = ({ rightContent }) => {
+export const Home: React.FC<HomeProps> = ({ rightContent }) => {
 
   return (
     <HomeStyled>
       <BlackHole />
+      
       <Header />
       <Avatar src={userAvatar} alt="User Avatar" size="200px" />
       <DashboardProjects />
-      {rightContent}
       <Footer />
+      {rightContent}
     </HomeStyled>
   );
 };

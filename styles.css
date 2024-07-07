@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Ditoit&display=swap');
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+    background-color: #2f2f2f;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    padding-bottom: 0%;
+
+}
+
+.small-text {
+    margin-top: 10rem;
+    align-self: flex-start;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.error-code {
+    font-size: 30rem;
+    margin: 0;
+    font-family: 'Ditoit';
+}
+
+.small-text-footer {
+    margin-top: 0rem;
+    align-self: flex-end;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
