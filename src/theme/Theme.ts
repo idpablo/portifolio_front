@@ -179,8 +179,8 @@ export const HeaderStyled = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
   width: 100%;
-  height: 3rem;
   margin: 0px;
   padding: 5px;
   border-radius: 5px;
@@ -416,16 +416,13 @@ export const FooterStyled = styled.div`
   flex-direction: column;
   text-align: center;
   bottom: 0px;
-  margin: 5px;
-  width: 99%;
-  height: 15%;
-  padding-bottom: 20px;
+  width: 100%;
   font-size: 0.8rem;
-  border-radius: 5px;
+  border-radius: 8px;
+  padding-bottom: 20px;
   color: ${({ theme }) => theme.colors.primary};
   box-shadow: ${({ theme }) => theme.config.box_shadow };
   background-color: ${({ theme }) => theme.colors.background};
-  z-index: 100;
   
   p{
     color: ${({ theme }) => theme.colors.text}
@@ -458,10 +455,10 @@ export const FooterLinks = styled.div`
 export const BlackHoleStyled = styled.div`
     display: grid;
     place-content: center;
-    top: -5%;
-    left: -5%;
-    width: 110%;
-    height: 110vh;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     position: fixed;
     // filter: blur(8px);
     opacity: ${({ theme }) => theme.config.opacity}; 
